@@ -7,7 +7,6 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 body {
-  
 }
 header {
   position: fixed;
@@ -206,9 +205,9 @@ header {
   margin: 20%;
   box-shadow: 0 0 10px black;
   cursor: pointer;
-  opacity: 0;
-  animation: slideLeft 1s ease forwards;
-  animation-delay: calc(0.2s * var(--i));
+ /* opacity: 0;
+   animation: slideLeft 1s ease forwards;
+  animation-delay: calc(0.2s * var(--i)); */
 }
 
 .about-img img:hover {
@@ -216,8 +215,8 @@ header {
   transition: all 0.5s ease;
 }
 .about-text h2 {
-  font-size: 50px;
-  font-weight: 600;
+  font-size: 60px;
+  font-weight: 700;
   opacity: 0;
   animation: slideLeft 1s ease forwards;
   animation-delay: calc(0.2s * var(--i));
@@ -245,6 +244,9 @@ header {
   animation: slideTop 1s ease forwards;
   animation-delay: calc(0.2s * var(--i));
 }
+.btn-box {
+  margin-bottom: 20px;
+}
 /* #projects{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -266,9 +268,9 @@ header {
   text-align: center;
   font-size: 60px;
   padding-bottom: 70px;
-  /* opacity: 0;
+  opacity: 0;
   animation: slideLeft 1s ease forwards;
-  animation-delay: calc(.2s*var(--i)); */
+  animation-delay: calc(0.2s * var(--i));
 }
 .sub-title span {
   color: rgb(66, 123, 123);
@@ -282,7 +284,7 @@ header {
 }
 
 .project-list div {
-  background-color: #7196b8;
+  background-color: transparent;
   padding: 40px;
   font-size: 13px;
   font-weight: 500;
@@ -294,18 +296,18 @@ header {
 }
 .project-list div:hover {
   transform: translate(+5px, -5px);
-  transition: all 0.5s ease;
+  transition: all 1s ease;
 }
 .project-list div img {
   width: 100%;
   height: 200px;
-  background-color: tomato;
-  object-fit: cover;
-  border-radius: 20px;
+  background-color: transparent;
+  object-fit: contain;
   margin-bottom: 20px;
+  border-radius: 20px;
   opacity: 0;
-  animation: slideLeft 1s ease forwards;
-  animation-delay: 1s;
+  animation: slideTop 1s ease forwards;
+  animation-delay: calc(0.2s * var(--i));
 }
 .project-list div i {
   font-size: 50px;
@@ -345,9 +347,8 @@ header {
   box-shadow: 0 0 10px rgb(66, 123, 123);
 }
 
-.skills{
+.skills {
   background-color: rgb(168, 168, 168);
-  
 }
 .inner {
   padding-top: 20px;
@@ -359,19 +360,25 @@ header {
   font-size: 60px;
   font-weight: 700;
   position: relative;
+  opacity: 0;
+  animation: slideTop 1s ease forwards;
+  animation-delay: calc(0.2s * var(--i));
 }
 .heading1 span {
   color: rgb(66, 123, 123);
 }
 .container1 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   justify-content: center;
   align-items: center;
   text-align: center;
   font-size: 1.2 rem;
   gap: 1rem;
   padding: 1rem 80px;
+  opacity: 0;
+  animation: slideLeft 1s ease forwards;
+  animation-delay: calc(0.2s * var(--i));
 }
 .skill-box {
   padding: 20px;
@@ -380,9 +387,6 @@ header {
   box-shadow: 1px 1px 20px rgb(108, 97, 64);
   transition: background 0.5s ease;
   cursor: pointer;
-  opacity: 0;
-  animation: slideLeft 1s ease forwards;
-  animation-delay: calc(0.2s * var(--i));
 }
 .skill-box:hover .img {
   transform: translateY(-5px);
@@ -410,7 +414,7 @@ header {
   width: 100%;
   height: 100%;
   left: 0;
-  background-color:rgb(168, 168, 168);
+  background-color: rgb(168, 168, 168);
 
   border-radius: 20px;
   transition: all 0.5s ease;
@@ -448,11 +452,18 @@ header {
 @media screen and (max-width: 990px) {
   .container1,
   .project-list {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     padding: 2rem 50 px;
   }
 }
 @media screen and (max-width: 650px) {
+  .container1,
+  .project-list {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem 50 px;
+  }
+}
+@media screen and (max-width: 300px) {
   .container1,
   .project-list {
     grid-template-columns: repeat(1, 1fr);
@@ -472,8 +483,13 @@ header {
 .contact-text h2 {
   font-size: 60px;
   font-weight: 700;
+  text-align: center;
   line-height: 1;
+  margin-left: 40vw;
   color: black;
+  opacity: 0;
+  animation: slideLeft 1s ease forwards;
+  animation-delay: calc(0.2s * var(--i));
 }
 .contact-text h2 span {
   color: rgb(66, 123, 123);
@@ -491,9 +507,18 @@ header {
   line-height: 30px;
   margin-bottom: 2rem;
 }
+.contact-text h4,
+p {
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+  animation-delay: calc(0.2s * var(--i));
+}
 .contact-list {
   margin-bottom: 2rem;
-  }
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+  animation-delay: calc(0.2s * var(--i));
+}
 .contact-list li {
   margin-bottom: 10px;
   display: block;
@@ -508,7 +533,7 @@ header {
 }
 .contact-list i:hover {
   transform: scale(1.01) translateY(-5px);
-    font-weight: 800;
+  font-weight: 800;
 }
 .contact-icons i {
   display: inline-flex;
@@ -535,10 +560,13 @@ header {
 .contact-form {
   position: relative;
   margin-top: 15rem;
+  opacity: 0;
+  animation: slideBottom 1s ease forwards;
+  animation-delay: calc(0.2s * var(--i));
 }
 .contact-form form input,
 form textarea {
-    outline: none;
+  outline: none;
   width: 90%;
   padding: 10px;
   background: transparent;
@@ -554,8 +582,8 @@ form textarea::placeholder {
   color: #6d6c6c;
   font-weight: 400;
 }
-.contact-form form .send{
-  background:transparent;
+.contact-form form .send {
+  background: transparent;
   color: rgb(66, 123, 123);
   font-weight: 700;
   border: 2px solid rgb(66, 123, 123);
