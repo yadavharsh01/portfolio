@@ -11,18 +11,18 @@ I'm **Harsh Yadav** 😎, a passionate Web Developer from Bharat.
 I'm currently focusing on Web Development and constantly working on enhancing my skills.
 
 ## Projects
-You can find all of my projects on [GitHub](https://github.com/your_username).
+You can find all of my projects on [GitHub](https://github.com/yadavharsh01).
 
 ## How to Reach Me
-Feel free to connect with me via [email](mailto:your_email@example.com).
+Feel free to connect with me via [email](mailto:harshyadav.cse2020@ritroorkee.com).
 
 ## View My CV
 Interested in knowing more about my experiences? View my CV [here](link_to_cv).
 
 ## Connect with Me
-- LinkedIn: [Your LinkedIn Profile](link_to_linkedin)
-- Twitter: [Your Twitter Profile](link_to_twitter)
-- GitHub: [Your GitHub Profile](link_to_github)
+- LinkedIn: [Profile](https://www.linkedin.com/in/yadavharsh01)
+- Instagram: [Profile](https://www.instagram.com/harsh._.yaduvanshi01)
+- GitHub: [Profile](https://github.com/yadavharsh01)
 
 ## Tech Stack
 - C
