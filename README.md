@@ -1,6 +1,8 @@
 ## Deployed link
+#### Github Pages
   https://yadavharsh01.github.io/portfolio/
-
+#### Netlify Deployment
+  https://65d42f72da29737f17ee920e--tangerine-scone-af3a58.netlify.app/
 # Harsh Yadav's Portfolio Website
 
 Hey there! Welcome to my personal portfolio website deployed on GitHub Pages. 
