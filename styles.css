@@ -193,9 +193,7 @@ header {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 2rem;
-  /* padding: 6rem ; */
-
-  background-color: rgb(168, 168, 168);
+    background-color: #ffff
 }
 .about-img img {
   height: 300px;
@@ -205,9 +203,9 @@ header {
   margin: 20%;
   box-shadow: 0 0 10px black;
   cursor: pointer;
- /* opacity: 0;
+  opacity: 0;
    animation: slideLeft 1s ease forwards;
-  animation-delay: calc(0.2s * var(--i)); */
+  animation-delay: calc(0.2s * var(--i));
 }
 
 .about-img img:hover {
@@ -227,7 +225,7 @@ header {
 .about-text h4 {
   font-size: 30px;
   font-weight: 500;
-  color: #ffffff;
+  color: #000;
   margin: 15px 0 30px;
   line-height: 1.6;
   opacity: 0;
@@ -237,7 +235,7 @@ header {
 
 .about-text p {
   font-size: 20px;
-  color: whitesmoke;
+  color: #000;
   margin-bottom: 4rem;
   line-height: 1.4;
   opacity: 0;
@@ -348,7 +346,8 @@ header {
 }
 
 .skills {
-  background-color: rgb(168, 168, 168);
+  /* background-color: rgb(168, 168, 168); */
+  padding: 6rem 10%; 
 }
 .inner {
   padding-top: 20px;
@@ -388,24 +387,36 @@ header {
   transition: background 0.5s ease;
   cursor: pointer;
 }
+.skill-title img {
+  width: 90px;
+  height: 90px;
+  position: relative;
+  object-fit: cover;
+  border-radius: 30%;
+  margin-bottom: 1rem;
+  opacity: 0;
+  animation: slideTop 1s ease forwards;
+  animation-delay: calc(0.2s * var(--i));
+}
 .skill-box:hover .img {
   transform: translateY(-5px);
   transition: all 0.5s ease;
 }
-.skill-box:hover > .skill-title::after,
+/* .skill-box:hover > .skill-title::after,
 .skill-box:hover > .skill-title::before {
   width: 15px;
   background-color: #7196b8;
-}
+} */
 
-.skill-title {
+/* .skill-title {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0.5rem;
   margin-bottom: 0.5rem;
   position: relative;
-}
+} */
+/* }
 .skill-title::after {
   content: "";
   position: absolute;
@@ -418,19 +429,9 @@ header {
 
   border-radius: 20px;
   transition: all 0.5s ease;
-}
-.skill-title img {
-  width: 100px;
-  height: 100px;
-  position: relative;
-  object-fit: cover;
-  border-radius: 30%;
-  margin-bottom: 1rem;
-  opacity: 0;
-  animation: slideTop 1s ease forwards;
-  animation-delay: calc(0.2s * var(--i));
-}
-.skill-title img:after {
+} */
+
+/* .skill-title img:after {
   content: "";
   position: absolute;
   top: 0;
@@ -438,15 +439,15 @@ header {
   width: 100%;
   height: 100%;
   background-color: #000;
-}
-.skill-title h2 {
+} */
+/* .skill-title h2 {
   font-size: 25px;
   font-weight: 600;
   color: aliceblue;
   margin: 0.5rem;
-}
+} */
 .skill-icon {
-  width: 50px;
+  width: 30px;
   z-index: 2;
 }
 @media screen and (max-width: 990px) {
@@ -480,6 +481,13 @@ header {
   gap: 3rem;
   padding-left: 30px;
 }
+@media screen and (max-width: 650px) {
+  .contact
+  {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 2rem 50 px;
+  }
+}
 .contact-text h2 {
   font-size: 60px;
   font-weight: 700;
@@ -501,7 +509,7 @@ header {
   color: #000;
   line-height: 1;
 }
-.contact-text p {
+.contact-text p ,.look-more{
   font-size: 20px;
   color: #000;
   line-height: 30px;
@@ -564,6 +572,10 @@ p {
   animation: slideBottom 1s ease forwards;
   animation-delay: calc(0.2s * var(--i));
 }
+.contact-form h2{
+  text-align: center;
+  margin-bottom: 20px; ;
+}
 .contact-form form input,
 form textarea {
   outline: none;
@@ -595,15 +607,27 @@ form textarea::placeholder {
   box-shadow: 0 0 10px rgb(66, 123, 123);
 }
 .footer {
-  width: 100%;
+  /* width: 100vw;
   text-align: center;
   padding: 20px;
   background-color: rgb(66, 123, 123);
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 20px; */
+
+  /* position: fixed; */
+  bottom: 0;
+  right: 0;
   color: #ffffff;
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 1px;
   margin-top: 20px;
+  width: 100%;
+  padding: 20px 10%;
+  text-align: center;
+  background-color: rgb(66, 123, 123);
 }
 .top {
   position: fixed;
@@ -625,7 +649,7 @@ form textarea::placeholder {
   animation-delay: calc(0.2s * var(--i));
 }
 .top:hover {
-  opacity: 0.7;
+  opacity: 1;
   transform: translateY(-5px);
   transition: all 0.5s ease;
 }
