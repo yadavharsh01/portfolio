@@ -276,7 +276,7 @@ header {
 .project-list {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-gap: 30px;
   margin: 10px;
 }
@@ -298,7 +298,7 @@ header {
 }
 .project-list div img {
   width: 100%;
-  height: 200px;
+  height: 300px;
   background-color: transparent;
   object-fit: contain;
   margin-bottom: 20px;
@@ -451,15 +451,13 @@ header {
   z-index: 2;
 }
 @media screen and (max-width: 990px) {
-  .container1,
-  .project-list {
+  .container1{
     grid-template-columns: repeat(3, 1fr);
     padding: 2rem 50 px;
   }
 }
 @media screen and (max-width: 650px) {
-  .container1,
-  .project-list {
+  .container1 {
     grid-template-columns: repeat(2, 1fr);
     padding: 2rem 50 px;
   }
