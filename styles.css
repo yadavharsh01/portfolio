@@ -193,7 +193,7 @@ header {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 2rem;
-    background-color: #ffff
+  background-color: #ffff;
 }
 .about-img img {
   height: 300px;
@@ -204,7 +204,7 @@ header {
   box-shadow: 0 0 10px black;
   cursor: pointer;
   opacity: 0;
-   animation: slideLeft 1s ease forwards;
+  animation: slideLeft 1s ease forwards;
   animation-delay: calc(0.2s * var(--i));
 }
 
@@ -338,6 +338,9 @@ header {
   border: solid rgb(66, 123, 123);
   color: rgb(66, 123, 123);
 }
+.read {
+  margin-bottom: 20px;
+}
 .read:hover,
 .live:hover {
   background: rgb(66, 123, 123);
@@ -347,7 +350,7 @@ header {
 
 .skills {
   /* background-color: rgb(168, 168, 168); */
-  padding: 6rem 10%; 
+  padding: 6rem 10%;
 }
 .inner {
   padding-top: 20px;
@@ -451,7 +454,7 @@ header {
   z-index: 2;
 }
 @media screen and (max-width: 990px) {
-  .container1{
+  .container1 {
     grid-template-columns: repeat(3, 1fr);
     padding: 2rem 50 px;
   }
@@ -480,8 +483,7 @@ header {
   padding-left: 30px;
 }
 @media screen and (max-width: 650px) {
-  .contact
-  {
+  .contact {
     grid-template-columns: repeat(1, 1fr);
     padding: 2rem 50 px;
   }
@@ -507,7 +509,8 @@ header {
   color: #000;
   line-height: 1;
 }
-.contact-text p ,.look-more{
+.contact-text p,
+.look-more {
   font-size: 20px;
   color: #000;
   line-height: 30px;
@@ -570,9 +573,9 @@ p {
   animation: slideBottom 1s ease forwards;
   animation-delay: calc(0.2s * var(--i));
 }
-.contact-form h2{
+.contact-form h2 {
   text-align: center;
-  margin-bottom: 20px; ;
+  margin-bottom: 20px;
 }
 .contact-form form input,
 form textarea {
